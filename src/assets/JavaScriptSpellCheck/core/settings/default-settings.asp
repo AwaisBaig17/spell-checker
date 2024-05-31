@@ -1,0 +1,4 @@
+<% 
+SaveToCentralDictionary = true
+LicenseKey = "LIVESPELL-R3J0KNR972H5681NVM3-LM3UL-G6CJ6-JS.REDISTRIBUTION-YZJCJ" 
+%>

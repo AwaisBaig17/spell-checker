@@ -1,0 +1,30 @@
+.spell-check-sapling {
+  width: 60%;
+  min-height: 200px;
+  margin: 10px 0px 0px 0px;
+  border-radius: 5px;
+  text-align: left;
+  padding: 1em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.wsc-button__text {
+  font-size: 0 !important; /* Hide text */
+  visibility: hidden !important;
+}
+
+/* Use a pseudo-element to add new text */
+.wsc-button__text::after {
+  content: 'Dismiss';
+  font-size: medium; /* Set the font size as needed */
+  visibility: visible;
+}
+
+.wsc-button__text:hover {
+  background-color: #184b8b !important;
+}
+
+:host ::ng-deep div.wsc-contextmenu {
+  background-color: #f5f5f5 !important;
+}
