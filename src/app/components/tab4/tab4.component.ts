@@ -27,7 +27,7 @@ export class Tab4Component {
       disableOptionsStorage: true,
       theme: 'custom',
       suggestionsCount: 5,
-      ignoreClasses: ['btnComponent_Attached', 'Comp_Heading_Attached', 'compLbl'],
+      ignoreClasses: ['btnComponent_Attached', 'Comp_Heading_Attached', 'compLbl', 'Comp_Heading_Detail'],
       onLoad: (instance: any) => {
         this.instance = instance;
       },
