@@ -20,3 +20,14 @@
 .nav-tabs .nav-link:hover {
   border-color: #e9ecef #e9ecef #dee2e6; /* Hover border color */
 }
+
+.spell-check-sapling {
+  width: 60%;
+  min-height: 200px;
+  margin: 10px 0px 0px 0px;
+  border-radius: 5px;
+  text-align: left;
+  padding: 1em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
