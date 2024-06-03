@@ -3,6 +3,7 @@ import { SpellCheckerService } from './services/spell-checker.service';
 import { Sapling } from "@saplingai/sapling-js/observer";
 import WProofreaderSDK from '@webspellchecker/wproofreader-sdk-js';
 import { Subject, debounceTime } from 'rxjs';
+import { NavigationEnd, Router } from '@angular/router';
 
 
 declare const WProofreader: any;
@@ -15,16 +16,20 @@ declare const WProofreader: any;
 export class AppComponent {
   title = 'spell-checker';
   spellCheckerInstance: any;
-  constructor(private spellCheckerService: SpellCheckerService) {
-
+  constructor(private router: Router, private spellCheckerService: SpellCheckerService) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        console.log('Navigated to', event.url);
+      }
+    });
   }
-  @ViewChild('editorContent') editorContent!: ElementRef;
+  //@ViewChild('editorContent') editorContent!: ElementRef;
 
   ngOnInit(): void {
   }
 
   ngAfterViewInit(): void {
-    this.InitializeProofReader();
+    //this.InitializeProofReader();
   }
 
   InitializeSapling() {

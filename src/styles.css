@@ -6,3 +6,17 @@
 .wsc-contextmenu__button:hover {
   background-color: #184b8b !important;
 }
+
+.nav-tabs .nav-link {
+  color: #495057; /* Default text color, change as needed */
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff !important; /* Active tab text color */
+  background-color: #184b8b !important ; /* Active tab background color */
+  border-color: #dee2e6 #dee2e6 #fff; /* Border color */
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: #e9ecef #e9ecef #dee2e6; /* Hover border color */
+}
