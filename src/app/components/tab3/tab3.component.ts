@@ -21,7 +21,7 @@ export class Tab3Component {
       autoSearch: true,
       autoDestroy: true,
       enforceAI: true,
-      serviceId: 'YORvsaqImsRm4gM',
+      serviceId: 'W7NYnEfUKDSjvsO',
       enableGrammar: true,
       actionItems: ['ignoreAll', 'addWord'],
       disableOptionsStorage: true,
