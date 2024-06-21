@@ -20,7 +20,7 @@ export class Tab2Component {
       autoSearch: true,
       autoDestroy: true,
       enforceAI: true,
-      serviceId: 'W7NYnEfUKDSjvsO',
+      serviceId: 'UBgnDLE6pdiqtYB',
       enableGrammar: true,
       actionItems: ['ignoreAll', 'addWord'],
       disableOptionsStorage: true,
