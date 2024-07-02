@@ -20,13 +20,14 @@ export class Tab4Component {
       container: this.scenario4.nativeElement,
       autoSearch: true,
       autoDestroy: true,
-      enforceAI: true,
-      serviceId: 'UBgnDLE6pdiqtYB',
+      enforceAI: false,
       enableGrammar: true,
       actionItems: ['ignoreAll', 'addWord'],
-      disableOptionsStorage: true,
-      theme: 'custom',
       suggestionsCount: 5,
+      serviceProtocol: "http",
+      servicePort: 80,
+      serviceHost: "CMDLHRLTX232",
+      servicePath: "wscservice/api",
       ignoreClasses: ['btnComponent_Attached', 'Comp_Heading_Attached', 'compLbl', 'Comp_Heading_Detail'],
       onLoad: (instance: any) => {
         this.instance = instance;
