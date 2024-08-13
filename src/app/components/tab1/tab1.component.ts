@@ -43,4 +43,24 @@ export class Tab1Component {
       },
     });
   }
+
+  async checkForIsolation() {
+    if (!window.crossOriginIsolated) {
+      console.log('performance.measureUserAgentSpecificMemory() is only available in cross-origin-isolated pages');
+    } else if (!(performance as any).measureUserAgentSpecificMemory) {
+      console.log('performance.measureUserAgentSpecificMemory() is not available in this browser');
+    } else {
+      let result;
+      try {
+        result = await (performance as any).measureUserAgentSpecificMemory();
+      } catch (error) {
+        if (error instanceof DOMException && error.name === 'SecurityError') {
+          console.log('The context is not secure.');
+        } else {
+          throw error;
+        }
+      }
+      console.log(result);
+    }
+  }
 }
